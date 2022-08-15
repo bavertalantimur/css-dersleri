@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>bu benim sayfam</title>
+</head>
+<body>
+    <h1>Form etiketi</h1>
+    <form>
+        <p>  <label>isim : <input readonly type="text" value="baver">  </label> </p>
+        <p>  <label for="surname">surname:</label>
+        <input id="surname" type="text" placeholder="soyisiminizi yazin">
+        </p>
+        <p>  <label>tel: <input type="text" placeholder="tel giriniz">   </label></p>
+        <p>  <label>email: <input type="email" placeholder="e mail giriniz" required> </label>  </p>
+        <label> <input type="checkbox">   Bmw </label>
+        <label> <input type="checkbox">   Mercedes </label>
+        <label> <input type="checkbox">   Ford </label>
+
+        
+        <fieldset> 
+            <legend>araba markaları</legend>
+            <label> <input type="radio" name="car-type" >Bmw</label>  
+             <label> <input type="radio" name="car-type">Mercedes</label>
+             <label> <input type="radio" name="car-type" >Ford</label>    
+        </fieldset>
+        <p><label>Kiralama tarihi: <input type="date"> </label></p>
+        <p><label> <input type="file" accept="img/*"></label>  </p>
+        <p>
+        <input list="diller">
+        
+        <datalist id="diller">
+            <option value="html"></option>
+            <option value="javascript"></option>
+            <option value="css"></option>
+        </datalist>
+        </p>
+
+
+        <select name="dil[]" multiple size="7">
+            <optgroup label="Fronted-dilleri">
+                <option value="css" selected="selected">Css</option>
+                <option value="css">Html</option>
+                <option value="css">Js</option>
+            </optgroup>
+            <optgroup label="Backend-dilleri">
+                <option value="php">PhP</option>
+                <option value="js">Html</option>
+                <option value="python">Js</option>
+            </optgroup>
+            
+
+
+        </select>
+        <br>
+        <textarea  rows="10" cols="100"></textarea>
+        
+        <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        
+        
+
+
+        <input type="submit" value="Yolla">
+        <input type="reset" value="Sıfırla">
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>nostalji cafe </title>
+
+<style type="text/css">
+    input[type="radio"]:checked + span {
+        color: red;
+    }
+
+    .button::before{
+        content: attr(data-hide);
+    }
+    .checkbox:checked + .button::before{
+        content: attr(data-show);
+    }
+    .checkbox:checked + .button + .box{
+        display: none;
+
+    }
+
+
+    :focus{
+        outline: none; /* dış çizgiyi kaldırdık*/
+
+    }
+    button:focus{
+        background-color: green;
+
+    }
+    input:focus{
+        color: red;
+        border-color:violet;
+    }
+    a:focus{
+        background-color: yellow;
+    }
+    li:focus{
+        background-color: teal;
+    }
+
+
+    
+</style>
+</head>
+<body>
+    <label>
+        <input type="radio" name="kadin" value="kadin">
+        <span>Kadin</span>
+    </label>
+    <label>
+        <input type="radio" name="kadin" value="erkek">
+        <span>Erkek</span>
+    </label>
+    <hr>
+    <input type="checkbox"  id="cb" class="checkbox">
+    <label class="button" for="cb" data-show="göster" data-hide="gizle"></label>
+    <div class="box">
+        merhaba,burası gizlenebilir bir alandır.
+    </div>
+
+    <button>Buton</button>
+    <input type="text">
+    <a href="#">tıkla</a>
+    <ul>
+        <li>Liste1</li>
+        <li tabindex="5">Liste2</li>
+        <li tabindex="6">Liste3</li>
+    </ul>
+
+
+
+
+
+</body>
+</html>

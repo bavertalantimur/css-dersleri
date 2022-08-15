@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <table border="1">
+            <caption>Rowspan Uygulama</caption> <!--tabloya başlık ekledik-->
+            <tr>
+                <td>Ünvan</td>
+                <td>Adı Soyadı</td>
+                <td>Branşı</td>
+                <td>Bildiği Diller</td>
+            </tr>
+            <tr>
+                <!--profesör ünvanında iki kişi var bu yüzden iki satırı birleştireceğiz. Bunun için rowspan="2" yazdık-->
+                <td rowspan="2">Profesör</td>
+                <td>Ferhat Şirin</td>
+                <td>Kripto</td>
+                <td>İngilizce</td>
+            </tr>
+            <tr>
+                <td>Serhat Şirin</td>
+                <td>Veritabanı Yönetimi</td>
+                <td>İngilizce,Almanca</td>
+            </tr>
+            <tr>
+                <td>Doç. Dr.</td>
+                <td>Murat Şirin</td>
+                <td>Genetik</td>
+                <td>İngilizce,Rusça</td>
+            </tr>
+        </table>
+
+
+        <table border="1">
+            <caption>Colspan Uygulama</caption> <!--tabloya başlık ekledik-->
+            <tr>
+                <!--başarılı olan 3 öğrenciyi tek sütun altında colspan ile birleştridik-->
+                <td colspan="3">Programlama Dilleri Dersinden Başarılı Olan Öğrenciler ve Not Ortalamaları</td>
+            </tr>
+            <tr>
+                <td>Ferhat Şirin</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Serhat Şirin</td>
+                <td>96</td>
+            </tr>
+            <tr>
+                <td>Murat Şirin</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <!--başarısız olan 2 öğrenciyi tek sütun altında colspan ile birleştridik-->
+                <td colspan="2">Programlama Dilleri Dersinden Başarısız Olan Öğrenciler ve Not Ortalamaları</td>
+            </tr>
+            <tr>
+                <td>Nihat Şirin</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Gazi Şirin</td>
+                <td>38</td>
+            </tr>
+        </table>
+    </body>
+</html>

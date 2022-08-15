@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bu benim ilk sayfam</title>
+
+        <style>
+            .containter {
+                width: 500px;
+                height: 500px;
+                background-color: gray;
+
+            }
+
+            .box-1 {
+                width: 100px;
+                height: 100px;
+                background-color: hotpink;
+
+            }
+            .box-2 {
+                width: 100px;
+                height: 100px;
+                background-color: khaki;
+                position: relative;
+               
+
+            }
+            .box-3{
+                
+                width: 100px;
+                height: 100px;
+                background-color: lightgreen;
+                position: absolute;
+                left: 400px;
+                bottom: 10px;
+                /*container relative yaparsak containere göre konumlama yapar*/
+
+
+            
+            }
+            .fixed{
+                position: fixed;
+                width: 300px;
+                border: 3px solid green;
+                right: 0;
+                bottom: 0;
+                background-color: greenyellow;
+            }
+            .sticky{
+                position: sticky;
+                top: 0;
+                padding: 5px;
+                background-color: greenyellow;
+                border: 2px solid green;
+
+            }
+
+        </style>
+
+     
+    </head>
+    
+
+    <body>
+       
+        <div class="containter">
+            <div class="box-1">kutu1</div>
+            <div class="box-2">kutu2</div>
+            <div class="box-3">kutu3</div>
+        </div>
+        <div class="fixed">
+            <p>bu bir fixed özeliiğidir</p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium et natus, eaque tenetur labore velit?
+        </p>
+        <div class="sticky">
+            <p>bu bir sticky alanı</p>
+        </div>
+       
+    </body>
+</html>

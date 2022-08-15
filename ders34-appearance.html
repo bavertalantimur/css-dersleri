@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> bu benim ilk sayfam </title>
+<style type="text/css">
+    select{
+        appearance: none;
+        border-color:red;
+        border-radius: 4px;
+        background: url(img/arrow.png) no-repeat right;
+        background-size: 15px;
+        height: 35px;
+        padding: 0 10px;
+        cursor: pointer;
+        outline: none;
+    }
+    select:focus{
+        border-color:purple;
+    }
+    input[type="checkbox"]{
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        position: relative;
+        transition: .25s all;
+    }
+    input[type="checkbox"]:hover{
+        border-color: red;
+
+    }
+    /*input[type="checkbox"]:checked{
+        background: url(img/check.svg) no-repeat center;
+        background-size: 16px;
+    }*/
+    input[type="checkbox"]::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background:url(img/check.svg) no-repeat center;
+        background-size: 18px;
+        transform: scale(0);
+        
+        transition: .255s all;
+    }
+    input[type="checkbox"]:checked{
+        border-color: #000;
+    }
+    
+    input[type="checkbox"]:checked::before{
+        transform: scale(1);
+    }
+    
+
+    input[type="radio"]{
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        border-radius:50%;
+        cursor: pointer;
+        position: relative;
+    }
+    input[type="radio"]::before{
+        content: '';
+        width: 13px;
+        height: 13px;
+        background: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) scale(.5);
+        opacity: 0;
+        border-radius: 50%;
+        transition: .25s all;
+
+    }
+    input[type="radio"]:checked::before{
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+    input[type="radio"]:hover{
+        border-color:red;
+    }
+    input.file{
+        outline: none;
+    }
+
+
+    input.file::file-selector-button{
+        background-color: #fff;
+        height: 35px;
+        padding: 0 20px;
+        border: 1px solid #000;
+        cursor: pointer;
+
+    }
+
+    input.file:hover::file-selector-button{
+        border-color: #999;
+
+    }
+    input.file:valid::file-selector-button{
+        background: rgba(0,128,0,0.178) url(img/check.svg) no-repeat right;
+        background-size: 18px;
+        padding-right: 30px;
+        border-color: green;
+
+    }
+    .upload-file input{
+        display: none;
+        
+
+    }
+    .upload-file .upload-box{
+        border: 1px solid #ccc;
+        padding: 25px;
+        text-align: center;
+        font-family: Arial,  sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+        
+    }
+    .upload-file .selected {
+        display: none;
+        
+    }
+    .upload-file input:valid + .upload-box .not-selected{
+        display: none;
+    }
+    .upload-file input:valid + .upload-box .selected{
+        display: inline-block;
+    }
+ 
+
+    
+
+
+
+
+</style>
+
+</head>
+<body>
+    <select name="" id="">
+        <option value="">protorurkkk</option>
+        <option value="">kablosuzkedi</option>
+    </select>
+    <hr>
+    <input type="checkbox">
+    <hr>
+    <input type="radio">
+    <hr>
+    <input type="file" class="file" required>
+    <hr>
+    <label class="upload-file" >
+        <input  type="file" required>
+        <div class="upload-box">
+            <img src="img/upload.svg"  class="not-selected" height="40">
+            <img src="img/upload.svg"  class="selected" height="40">
+            <div>Dosyaları buraya sürükleyin ya da seçmek için tıklayınız</div>
+        </div>
+
+    </label>
+    
+
+</body>
+
+</html>

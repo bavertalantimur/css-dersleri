@@ -1,0 +1,238 @@
+body {
+    font-family: 'Lato', sans-serif;
+
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+.top_header{
+    height: 112px;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.col4{
+    width: 33.33%;
+    float: left;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+   
+    margin-top: 20px;
+}
+.main_nav {
+    margin-top: 50px;
+
+}
+.main_nav ul{
+    margin: 0;
+    padding: 0;
+}
+.main_nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.main_nav li:last-child{
+    margin-right: 0;
+}
+.main_nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.main_nav li a:hover{
+    color: #11B7B1;
+}
+.social_links{
+    margin-top: 40px;
+
+}
+.social_links li{
+    display: inline-block;
+    float: right;
+    
+   
+}
+.social_links .fa-brands{
+    width: 30px;
+    height: 30px;
+    
+    border-radius: 30px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.fa-facebook {
+    background-color: #395398;
+}
+.fa-twitter{
+    background-color:#00ECED ;
+
+}
+.fa-instagram{
+    background-color: #BB0000;
+
+}
+#main_area {
+    background-image: url(../proje2/img/image.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 620px;
+    padding-top: 225px;
+    text-align: center;
+}
+h1{
+    font-size: 60px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    word-spacing: 100px;
+    
+}
+h1 span{
+    color: #11B7B1;
+}
+#main_area p {
+    font-size: 14px;
+    color: white;
+    padding-bottom: 100px;
+}
+.fa-arrow-down{
+    width: 42px;
+    height: 42px;
+    border-radius: 42px;
+    background-color: #11B7B1;
+    line-height: 42px;
+    font-size: 28px;
+}
+#whatwedo{
+    background-color:#11B7B1 ;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 56px;
+    padding-bottom: 112px;
+
+}
+#whatwedo h2{
+    font-size:30px ;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+}
+#whatwedo .col6{
+    width: 50%;
+    min-height: 200px;
+    float: left;
+    background-image: url(../proje2/img/image.jpg);
+    opacity: .70;
+    cursor: pointer;
+
+}
+#whatwedo .col6:hover {
+    opacity: 1;
+
+}
+#whatwedo h3{
+    
+    font-weight: 300;
+}
+#whatwedo h3 , #whatwedo p{
+    color: white;
+
+}
+#whatwedo p{
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+#testimonianls{
+    background-image: url(../proje2/img/image2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 422px;
+    margin-top: 0px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+#testimonianls p {
+    padding-top: 120px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight:300 ;
+
+}
+#testimonianls h4 {
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+
+}
+#testimonianls h4 span {
+    color: black;
+
+}
+.fa-circle {
+    font-size: 24px;
+    color: #11B7B1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.active-circle{
+    color: white;
+}
+#clients {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+#clients h2{
+    font-size:30px ;
+    font-weight: 300;
+    color: #17b1b1;
+    text-transform: uppercase;
+
+}
+.col2{
+    width: 20%;
+    
+    float: left;
+}
+
+#clients .col2 img {
+   
+    opacity: 0.7;
+    cursor: pointer;
+}
+#clients .col2 img:hover {
+    opacity: 1;
+}
+footer {
+    background-color: black;
+    color: #17b1bd;
+    text-align: center;
+    
+}
+
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+
+}
+.fa-rebel {
+    font-size: 28px;
+    padding-top: 10px;
+}
+ 

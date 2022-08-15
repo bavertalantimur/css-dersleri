@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>nostalji cafe </title>
+
+<style type="text/css">
+    /*
+    html kısmı
+    <input type="checkbox" id="checkbox">
+    <div class="box">prototurk</div>
+    .box{
+        width: 200px;
+        height: 200px;
+        background: lightblue;
+        transition: 1s transform;
+    }
+    #checkbox:checked + .box{
+        transform: rotate(180deg) ;
+        /* rotateX(),rotateY 
+
+    }*/
+
+    .box{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        perspective: 800px;
+        
+        
+    }
+    .box .front, .box .back{
+        width: inherit;
+        height: inherit;
+        transition: 1s transform;
+        backface-visibility: hidden;
+        position: absolute;
+        
+        
+        
+        
+       
+    }
+    .box .front {
+        background: lightblue;
+        
+
+    }
+
+    .box .back {
+        background: lightcoral;
+        transform: rotateY(-180deg);
+        
+        
+
+    }
+
+
+    .box:hover .front{
+        transform: rotateY(180deg);
+    }
+    .box:hover .back{
+        transform: rotateY(0);
+    }
+
+
+
+    .skew-box{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: skewX(45deg);
+    }
+    .button{
+        display: block;
+        line-height: 50px;
+        padding:0 20px;
+        text-decoration: none;
+        color:#333 ;
+        border: 2px solid #ccc;
+        width: 200px;
+        text-align: center;
+        position: relative;
+        z-index:1;
+        overflow: hidden;
+    }
+
+    .button::before{
+        content: '';
+        width:  100%;
+        height: 100%;
+        transition: 1s left;
+        position: absolute;
+        top:0;
+        left:-120%;
+        background-color:lightcoral;
+        transform: skew(10deg);
+        z-index:-1;
+        
+    }
+    .button:hover::before{
+        left: -30%;
+
+    }
+
+
+
+    .scale-box{
+        width: 200px;
+        height: 200px;
+        background: lightblue;
+        transition: 1s transform;
+    }
+
+    .scale-box:hover{
+        transform: scale(1.1); /* varsıyalan 1 1.1 verirsek büyür*/
+    }
+    .scale-box:last-of-type{
+        background-color: lightcoral;
+    }
+
+
+
+
+    .menu-btn{
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        border: 2px solid #333;
+        padding: 10px 20px;
+        font:  bold 16px Arial,sans-serif;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        right:0;
+        width: 300px;
+        background: #000;
+        height: 100%;
+        transition: 300ms transform;
+        transform: translateX(100%);
+    }
+    .menu li a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 7px 0;
+    }
+    #checkbox:checked + .menu{
+        transform: translateX(0);
+
+    }
+    .popup{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+ 
+
+</style>
+</head>
+<body>
+
+
+
+<div class="box">
+    <div class="front">önyüz</div>
+    <div class="back">arka yüz</div>
+    
+
+
+</div>
+<div class="skew-box">protorurkkk</div>
+<a href="#" class="button">prototurk</a>
+<div class="scale-box">prototurk</div>
+<div class="scale-box">prototurk</div>
+<br>
+
+<label class="menu-btn" for="checkbox">Menu</label>
+<input type="checkbox" id="checkbox">
+<div class="menu">
+    <ul>
+        <li>
+            <a href="#">Ansayfa</a>
+        </li>
+        <li>
+            <a href="#">Hakkımızda</a>
+        </li>
+        <li>
+            <a href="#">iletişim</a>
+        </li>
+        <li>
+            <a href="#">blog</a>
+        </li>
+    </ul>
+</div>
+
+<div class="popup">
+    <div class="popup-inner">
+
+    </div>
+</div>
+
+</body>
+</html>
